@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		95A0B22F29E21E2800352A0C /* WineCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A0B22E29E21E2800352A0C /* WineCard.swift */; };
 		95DFDD6F29E0C45A00F18D39 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DFDD6E29E0C45A00F18D39 /* Product.swift */; };
 		95E1AC4029DFD70E000D7077 /* LaRedondaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E1AC3F29DFD70E000D7077 /* LaRedondaApp.swift */; };
 		95E1AC4229DFD70E000D7077 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E1AC4129DFD70E000D7077 /* ContentView.swift */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		95A0B22E29E21E2800352A0C /* WineCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineCard.swift; sourceTree = "<group>"; };
 		95DFDD6E29E0C45A00F18D39 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		95E1AC3C29DFD70E000D7077 /* LaRedonda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaRedonda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95E1AC3F29DFD70E000D7077 /* LaRedondaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaRedondaApp.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 				95E1AC3F29DFD70E000D7077 /* LaRedondaApp.swift */,
 				95E1AC4129DFD70E000D7077 /* ContentView.swift */,
 				95DFDD6E29E0C45A00F18D39 /* Product.swift */,
+				95A0B22E29E21E2800352A0C /* WineCard.swift */,
 				95E1AC4329DFD710000D7077 /* Assets.xcassets */,
 				95E1AC4529DFD710000D7077 /* Preview Content */,
 			);
@@ -142,6 +145,7 @@
 			files = (
 				95E1AC4229DFD70E000D7077 /* ContentView.swift in Sources */,
 				95E1AC4029DFD70E000D7077 /* LaRedondaApp.swift in Sources */,
+				95A0B22F29E21E2800352A0C /* WineCard.swift in Sources */,
 				95DFDD6F29E0C45A00F18D39 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,6 +283,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -311,6 +316,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
