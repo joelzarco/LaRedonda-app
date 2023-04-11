@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 struct WineCard: View {
-//    @EnvironmentObject var cartManager : CartManager
+    @EnvironmentObject var cartManager : CartManager
     var product : Product
     let wineWidth : CGFloat = 170
     
@@ -40,7 +40,7 @@ struct WineCard: View {
             Button{
                 print("add to cart button tapped")
                 // later call here cart manager
-//                cartManager.addToCart(product: product)
+                cartManager.addToCart(product: product)
             } label: {
                 Image(systemName: "plus")
                     .padding(10)

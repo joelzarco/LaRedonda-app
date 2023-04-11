@@ -11,7 +11,7 @@ struct CartView: View {
     @EnvironmentObject var cartManager : CartManager
     
     var body: some View {
-//        Text("Number of items: \(cartManager.products.count)")
+        Text("Number of items: \(cartManager.products.count)")
         ScrollView{
             if(cartManager.products.count > 0){
                 ForEach(cartManager.products, id: \.id){ product in
@@ -31,6 +31,5 @@ struct CartView: View {
         } //scrllV
         .navigationTitle("My Cart")
         .padding(.top)
-        
     }
 }

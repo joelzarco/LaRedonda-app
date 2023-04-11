@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-//    @StateObject var cartManager = CartManager()
+    @StateObject var cartManager = CartManager()
     
     var columns = [GridItem(.adaptive(minimum: 160), spacing: 20)]
     
@@ -75,7 +75,7 @@ struct ContentView: View {
                 } // lazyV
                 .padding()
             } // scrllV
-            .navigationTitle("Viñedos LaRedonda")
+            .navigationTitle("Viñedos LaRedønda")
             .navigationBarTitleDisplayMode(.automatic)
             .toolbar {
                 NavigationLink{ // dest
