@@ -35,7 +35,6 @@ struct WineRow: View {
         } // hs
         .padding(.horizontal)
         .frame(maxWidth: .infinity, alignment: .leading)
-        
     }
 }
 

@@ -12,6 +12,7 @@
 		95C31C8329E477D100CAC5B2 /* CartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C31C8229E477D100CAC5B2 /* CartButton.swift */; };
 		95C31C8629E4A9F700CAC5B2 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C31C8529E4A9F700CAC5B2 /* CartView.swift */; };
 		95C31C8929E4ADC400CAC5B2 /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C31C8829E4ADC400CAC5B2 /* CartManager.swift */; };
+		95C92EB929E60BF80054C0C4 /* WineDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C92EB829E60BF80054C0C4 /* WineDetailView.swift */; };
 		95DFDD6F29E0C45A00F18D39 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DFDD6E29E0C45A00F18D39 /* Product.swift */; };
 		95E1AC4029DFD70E000D7077 /* LaRedondaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E1AC3F29DFD70E000D7077 /* LaRedondaApp.swift */; };
 		95E1AC4229DFD70E000D7077 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E1AC4129DFD70E000D7077 /* ContentView.swift */; };
@@ -25,6 +26,7 @@
 		95C31C8229E477D100CAC5B2 /* CartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartButton.swift; sourceTree = "<group>"; };
 		95C31C8529E4A9F700CAC5B2 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		95C31C8829E4ADC400CAC5B2 /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
+		95C92EB829E60BF80054C0C4 /* WineDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineDetailView.swift; sourceTree = "<group>"; };
 		95DFDD6E29E0C45A00F18D39 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		95E1AC3C29DFD70E000D7077 /* LaRedonda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaRedonda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95E1AC3F29DFD70E000D7077 /* LaRedondaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaRedondaApp.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				95C31C8529E4A9F700CAC5B2 /* CartView.swift */,
+				95C92EB829E60BF80054C0C4 /* WineDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				95C31C8629E4A9F700CAC5B2 /* CartView.swift in Sources */,
+				95C92EB929E60BF80054C0C4 /* WineDetailView.swift in Sources */,
 				95E1AC4229DFD70E000D7077 /* ContentView.swift in Sources */,
 				95C31C8929E4ADC400CAC5B2 /* CartManager.swift in Sources */,
 				9596A5AE29E59AA3009C0CF1 /* WineRow.swift in Sources */,

@@ -75,7 +75,7 @@ struct ContentView: View {
                 } // lazyV
                 .padding()
             } // scrllV
-            .navigationTitle("Viñedos LaRedønda")
+            .navigationTitle(" Viñedos La Redønda")
             .navigationBarTitleDisplayMode(.automatic)
             .toolbar {
                 NavigationLink{ // dest
