@@ -103,7 +103,7 @@ struct WineDetailView: View {
                             .bold()
                     }
                     .padding(.top)
-                } // Grp
+                } // Grp too avoid 'too many index' error
                 //
                 Button("Add to cart"){
                     cartManager.addToCart(product: product)
