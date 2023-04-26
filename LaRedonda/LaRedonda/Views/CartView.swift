@@ -23,6 +23,9 @@ struct CartView: View {
                     Text("$\(cartManager.total).00")
                         .bold()
                 }
+                .padding()
+                PaymentButton(action: {})
+                
             } else{
                 Text("Your cart is empty")
             }

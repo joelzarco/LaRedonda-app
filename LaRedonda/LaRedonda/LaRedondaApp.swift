@@ -40,8 +40,6 @@ struct LaRedondaApp: App {
                     }
                 }
             } //else
-
-            
         } //wg
     } //som scn
 }
