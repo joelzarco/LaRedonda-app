@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9547157129FB2590007B041D /* PaymentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9547157029FB2590007B041D /* PaymentHandler.swift */; };
 		956F8DBD29E8BF570013B5DC /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956F8DBC29E8BF570013B5DC /* SplashView.swift */; };
 		9596A5AE29E59AA3009C0CF1 /* WineRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9596A5AD29E59AA3009C0CF1 /* WineRow.swift */; };
 		95A0B22F29E21E2800352A0C /* WineCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A0B22E29E21E2800352A0C /* WineCard.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9547157029FB2590007B041D /* PaymentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHandler.swift; sourceTree = "<group>"; };
 		956F8DBC29E8BF570013B5DC /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		9596A5AD29E59AA3009C0CF1 /* WineRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineRow.swift; sourceTree = "<group>"; };
 		95A0B22E29E21E2800352A0C /* WineCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineCard.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				95DFDD6E29E0C45A00F18D39 /* Product.swift */,
 				95C31C8829E4ADC400CAC5B2 /* CartManager.swift */,
+				9547157029FB2590007B041D /* PaymentHandler.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				95C31C8929E4ADC400CAC5B2 /* CartManager.swift in Sources */,
 				9596A5AE29E59AA3009C0CF1 /* WineRow.swift in Sources */,
 				95E1AC4029DFD70E000D7077 /* LaRedondaApp.swift in Sources */,
+				9547157129FB2590007B041D /* PaymentHandler.swift in Sources */,
 				95A0B22F29E21E2800352A0C /* WineCard.swift in Sources */,
 				956F8DBD29E8BF570013B5DC /* SplashView.swift in Sources */,
 				95DFDD6F29E0C45A00F18D39 /* Product.swift in Sources */,

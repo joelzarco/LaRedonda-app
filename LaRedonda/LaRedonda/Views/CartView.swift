@@ -13,24 +13,36 @@ struct CartView: View {
     var body: some View {
         Text("Number of items: \(cartManager.products.count)")
         ScrollView{
-            if(cartManager.products.count > 0){
-                ForEach(cartManager.products, id: \.id){ product in
-                    WineRow(product: product)
-                }
-                HStack{
-                    Text("Your cart total is: ")
-                    Spacer()
-                    Text("$\(cartManager.total).00")
-                        .bold()
-                }
-                .padding()
-                PaymentButton(action: {})
-                
-            } else{
-                Text("Your cart is empty")
+            if(cartManager.paymentSuccess){
+                Text("Thank you for your purchase")
+                    .padding()
             }
+             else{
+                 if(cartManager.products.count > 0){
+                     ForEach(cartManager.products, id: \.id){ product in
+                         WineRow(product: product)
+                     }
+                     HStack{
+                         Text("Your cart total is: ")
+                         Spacer()
+                         Text("$\(cartManager.total).00")
+                             .bold()
+                     }
+                     .padding()
+                     PaymentButton(action: cartManager.pay)
+                     
+                 } else{
+                     Text("Your cart is empty :(")
+                 }
+            }
+            
         } //scrllV
         .navigationTitle("My Cart")
         .padding(.top)
+        .onDisappear{
+            if(cartManager.paymentSuccess){
+                cartManager.paymentSuccess = false
+            }
+        }
     }
 }

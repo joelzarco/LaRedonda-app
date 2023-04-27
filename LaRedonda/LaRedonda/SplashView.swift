@@ -10,7 +10,7 @@ import SwiftUI
 struct SplashView: View {
     
     @State private var size = 0.8
-    @State private var opacity = 0.7
+    @State private var opacity = 0.5
     
     var body: some View{
         Image("splash")
