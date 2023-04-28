@@ -20,6 +20,16 @@ struct WineRow: View {
                 .frame(width: 50)
                 .cornerRadius(10)
             
+            VStack(alignment: .center, spacing: 10){
+                Text("Quantity:")
+                    .font(.caption)
+                // to allow orders > 1 in single wine
+                if let q = cartManager.myProducts[product.name]{
+                    Text("\(q)")
+                        .font(.caption).bold()
+                }
+            }
+            
             VStack(alignment: .leading, spacing: 10) {
                 Text(product.name)
                     .bold()

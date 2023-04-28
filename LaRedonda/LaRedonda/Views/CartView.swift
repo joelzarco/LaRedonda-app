@@ -11,16 +11,24 @@ struct CartView: View {
     @EnvironmentObject var cartManager : CartManager
     
     var body: some View {
-        Text("Number of items: \(cartManager.products.count)")
+//        Text("Number of items: \(cartManager.products.count)")
         ScrollView{
             if(cartManager.paymentSuccess){
                 Text("Thank you for your purchase")
                     .padding()
             }
              else{
-                 if(cartManager.products.count > 0){
-                     ForEach(cartManager.products, id: \.id){ product in
-                         WineRow(product: product)
+                 if(cartManager.products.count > 0 && !cartManager.myProducts.isEmpty){
+                     // refactored product's list
+//                     ForEach(cartManager.products, id: \.id){ product in
+//                         WineRow(product: product)
+//                     }
+                     ForEach(cartManager.myProducts.sorted(by: >), id: \.key){ key, value in
+                         let myProduct = cartManager.products.first(where: {$0.name == key})
+                         // come backs optional, so it needs to be unwrapped :(
+                         if let myWine = myProduct{
+                             WineRow(product: myWine)
+                         }
                      }
                      HStack{
                          Text("Your cart total is: ")
@@ -38,6 +46,7 @@ struct CartView: View {
             
         } //scrllV
         .navigationTitle("My Cart")
+        .navigationBarTitleDisplayMode(.large)
         .padding(.top)
         .onDisappear{
             if(cartManager.paymentSuccess){
