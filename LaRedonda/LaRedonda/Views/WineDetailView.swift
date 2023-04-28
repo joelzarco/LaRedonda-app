@@ -48,6 +48,15 @@ struct WineDetailView: View {
                                 .font(.caption)
                         }
                     }
+                    
+                    Button("Add to cart"){
+                        cartManager.addToCart(product: product)
+                    }
+                    .buttonStyle(.bordered).bold()
+                    .cornerRadius(10)
+                    .padding(10)
+                    .foregroundColor(.primary)
+                    
                     Spacer(minLength: 5)
                     VStack(alignment: .leading){
                         Text(product.descripcion)
@@ -105,13 +114,7 @@ struct WineDetailView: View {
                     .padding(.top)
                 } // Grp too avoid 'too many index' error
                 //
-                Button("Add to cart"){
-                    cartManager.addToCart(product: product)
-                }
-                .buttonStyle(.bordered).bold()
-                .cornerRadius(10)
-                .padding(10)
-                .foregroundColor(.primary)
+                
 
             } // Scroll
             .navigationTitle("\(product.name)")
