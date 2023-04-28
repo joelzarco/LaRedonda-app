@@ -13,7 +13,7 @@ class CartManager : ObservableObject{
     @Published var total : Int = 0
     // fixing cart view quantities, avoid duplicates on array
     @Published var quantity : Int = 0
-    @Published var myProducts = [String : Int]() // [wine : quantity]
+    @Published var myWines = [String : Int]() // [wine : quantity]
     
     // Payment stuff
     let paymentHandler = PaymentHandler()
@@ -24,12 +24,12 @@ class CartManager : ObservableObject{
         products.append(product)
         total += product.price
         // check if wine is already on cart, if true add 1, else add new element with quantity = 1
-        if(myProducts.contains{ $0.key == product.name}){
-            quantity = myProducts[product.name]!
+        if(myWines.contains{ $0.key == product.name}){
+            quantity = myWines[product.name]!
             quantity += 1
-            myProducts.updateValue(quantity, forKey: product.name)
+            myWines.updateValue(quantity, forKey: product.name)
         } else{
-            myProducts.updateValue(1, forKey: product.name)
+            myWines.updateValue(1, forKey: product.name)
         }
     }
     
@@ -40,12 +40,12 @@ class CartManager : ObservableObject{
         }
         total -= product.price
         // New sugestion for handling wine removal from cart
-        if let quantity = myProducts[product.name]{
+        if let quantity = myWines[product.name]{
             if (quantity > 1){
                 let q = quantity - 1
-                myProducts.updateValue(q, forKey: product.name)
+                myWines.updateValue(q, forKey: product.name)
             }else{
-                myProducts.removeValue(forKey: product.name)
+                myWines.removeValue(forKey: product.name)
             }
         }
     }

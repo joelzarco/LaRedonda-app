@@ -18,12 +18,12 @@ struct CartView: View {
                     .padding()
             }
              else{
-                 if(cartManager.products.count > 0 && !cartManager.myProducts.isEmpty){
+                 if(cartManager.products.count > 0 && !cartManager.myWines.isEmpty){
                      // refactored product's list
 //                     ForEach(cartManager.products, id: \.id){ product in
 //                         WineRow(product: product)
 //                     }
-                     ForEach(cartManager.myProducts.sorted(by: >), id: \.key){ key, value in
+                     ForEach(cartManager.myWines.sorted(by: >), id: \.key){ key, value in
                          let myProduct = cartManager.products.first(where: {$0.name == key})
                          // come backs optional, so it needs to be unwrapped :(
                          if let myWine = myProduct{

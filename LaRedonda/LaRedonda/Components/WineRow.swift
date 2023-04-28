@@ -24,7 +24,7 @@ struct WineRow: View {
                 Text("Quantity:")
                     .font(.caption)
                 // to allow orders > 1 in single wine
-                if let q = cartManager.myProducts[product.name]{
+                if let q = cartManager.myWines[product.name]{
                     Text("\(q)")
                         .font(.caption).bold()
                 }

@@ -5,6 +5,7 @@
 	<key>com.apple.developer.in-app-payments</key>
 	<array>
 		<string>merchant.org.appuniversity.laredonda</string>
+		<string>merchant.org.appuniversity.sweaterShopDemo</string>
 	</array>
 </dict>
 </plist>
