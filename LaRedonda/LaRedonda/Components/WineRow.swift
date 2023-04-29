@@ -23,7 +23,7 @@ struct WineRow: View {
             VStack(alignment: .center, spacing: 10){
                 Text("Quantity:")
                     .font(.caption)
-                // to allow orders > 1 in single wine
+                // to display orders > 1 in single wine
                 if let q = cartManager.myWines[product.name]{
                     Text("\(q)")
                         .font(.caption).bold()

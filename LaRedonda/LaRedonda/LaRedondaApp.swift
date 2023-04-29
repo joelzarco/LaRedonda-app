@@ -9,21 +9,21 @@ import SwiftUI
 
 class AppState : ObservableObject{
     
-    @Published var splashHasBeenShown : Bool = false
+    @Published var isSplashActive : Bool = false
     
-    init(splashHasBeenShown: Bool) {
-        self.splashHasBeenShown = splashHasBeenShown
+    init(isSplashActive: Bool) {
+        self.isSplashActive = isSplashActive
     }
 }
 
 @main
 struct LaRedondaApp: App {
     
-    @ObservedObject var appState = AppState(splashHasBeenShown : false)
+    @ObservedObject var appState = AppState(isSplashActive : false)
     
     var body: some Scene {
         WindowGroup {
-            if(appState.splashHasBeenShown){
+            if(appState.isSplashActive){
                 ContentView()
             }else{
                 ZStack{
@@ -35,7 +35,7 @@ struct LaRedondaApp: App {
                 .onAppear{
                     DispatchQueue.main.asyncAfter(deadline: .now() + 4){
                         withAnimation {
-                            appState.splashHasBeenShown = true
+                            appState.isSplashActive = true
                         }
                     }
                 }
