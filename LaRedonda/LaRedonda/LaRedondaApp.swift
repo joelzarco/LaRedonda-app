@@ -9,37 +9,64 @@ import SwiftUI
 
 class AppState : ObservableObject{
     
+    @Published var hasOnboarded : Bool = false
+    @Published var HasSignedWithApple : Bool = false
+    @Published var continueAsGuest : Bool = false
     @Published var isSplashActive : Bool = false
     
-    init(isSplashActive: Bool) {
-        self.isSplashActive = isSplashActive
-    }
+//    init(isSplashActive: Bool) {
+//        self.isSplashActive = isSplashActive
+//    }
+}
+
+class SignInManager : ObservableObject{
+    
+    @AppStorage("userId") var userId : String = ""
+    @AppStorage("name") var name : String = ""
 }
 
 @main
 struct LaRedondaApp: App {
     
-    @ObservedObject var appState = AppState(isSplashActive : false)
+    @ObservedObject var appState = AppState()
+    @ObservedObject var signInManager = SignInManager()
     
     var body: some Scene {
         WindowGroup {
             if(appState.isSplashActive){
-                ContentView()
+                // ->
+                            if(appState.hasOnboarded && !signInManager.userId.isEmpty){  // not empty userID means it's already signed in
+                                LaRedondaMain()
+                                    .environmentObject(appState)
+                                    .environmentObject(signInManager)
+                            } else if(appState.hasOnboarded && appState.continueAsGuest){ // onboarded and guest
+                                withAnimation(.easeInOut(duration: 4)) {
+                                    LaRedondaMain()
+                                        .environmentObject(appState)
+                                        .environmentObject(signInManager)
+                                }
+                            }
+                            else{
+                                Onboarding()
+                                    .environmentObject(appState)
+                                    .environmentObject(signInManager)
+                            }
+                            // -> onboarding and signing
             }else{
                 ZStack{
                     SplashView()
-                }
+                } // ZS
+                .preferredColorScheme(.dark)
                 .statusBarHidden()
                 .ignoresSafeArea()
-                .preferredColorScheme(.dark)
                 .onAppear{
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 4){
+                    DispatchQueue.main.asyncAfter(deadline : .now() + 4) {
                         withAnimation {
                             appState.isSplashActive = true
                         }
                     }
-                }
-            } //else
-        } //wg
-    } //som scn
+                } // .onAppear()
+            } // outter else
+        } // Wg
+    }
 }

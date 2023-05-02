@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9540B2292A00859200E5A8D2 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9540B2282A00859200E5A8D2 /* Onboarding.swift */; };
 		9547157129FB2590007B041D /* PaymentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9547157029FB2590007B041D /* PaymentHandler.swift */; };
 		956F8DBD29E8BF570013B5DC /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956F8DBC29E8BF570013B5DC /* SplashView.swift */; };
 		9596A5AE29E59AA3009C0CF1 /* WineRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9596A5AD29E59AA3009C0CF1 /* WineRow.swift */; };
@@ -20,12 +21,13 @@
 		95CEB2E029F9D97100B5AB40 /* PaymentButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CEB2DF29F9D97100B5AB40 /* PaymentButton.swift */; };
 		95DFDD6F29E0C45A00F18D39 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DFDD6E29E0C45A00F18D39 /* Product.swift */; };
 		95E1AC4029DFD70E000D7077 /* LaRedondaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E1AC3F29DFD70E000D7077 /* LaRedondaApp.swift */; };
-		95E1AC4229DFD70E000D7077 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E1AC4129DFD70E000D7077 /* ContentView.swift */; };
+		95E1AC4229DFD70E000D7077 /* LaRedondaMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E1AC4129DFD70E000D7077 /* LaRedondaMain.swift */; };
 		95E1AC4429DFD710000D7077 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95E1AC4329DFD710000D7077 /* Assets.xcassets */; };
 		95E1AC4729DFD710000D7077 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95E1AC4629DFD710000D7077 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9540B2282A00859200E5A8D2 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
 		9547157029FB2590007B041D /* PaymentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentHandler.swift; sourceTree = "<group>"; };
 		956F8DBC29E8BF570013B5DC /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		9596A5AD29E59AA3009C0CF1 /* WineRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WineRow.swift; sourceTree = "<group>"; };
@@ -41,7 +43,7 @@
 		95DFDD6E29E0C45A00F18D39 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		95E1AC3C29DFD70E000D7077 /* LaRedonda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaRedonda.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95E1AC3F29DFD70E000D7077 /* LaRedondaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaRedondaApp.swift; sourceTree = "<group>"; };
-		95E1AC4129DFD70E000D7077 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		95E1AC4129DFD70E000D7077 /* LaRedondaMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaRedondaMain.swift; sourceTree = "<group>"; };
 		95E1AC4329DFD710000D7077 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95E1AC4629DFD710000D7077 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +74,7 @@
 			children = (
 				95AA5FF929FDDF880008486A /* PageModel.swift */,
 				95AA5FFC29FDE0E90008486A /* PageView.swift */,
+				9540B2282A00859200E5A8D2 /* Onboarding.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -117,7 +120,7 @@
 			children = (
 				95CEB2E129F9E12400B5AB40 /* LaRedonda.entitlements */,
 				95E1AC3F29DFD70E000D7077 /* LaRedondaApp.swift */,
-				95E1AC4129DFD70E000D7077 /* ContentView.swift */,
+				95E1AC4129DFD70E000D7077 /* LaRedondaMain.swift */,
 				956F8DBC29E8BF570013B5DC /* SplashView.swift */,
 				95AA5FFB29FDDF8D0008486A /* Onboarding */,
 				9596A5AF29E59B07009C0CF1 /* Models */,
@@ -210,7 +213,7 @@
 				95C31C8629E4A9F700CAC5B2 /* CartView.swift in Sources */,
 				95C92EB929E60BF80054C0C4 /* WineDetailView.swift in Sources */,
 				95CEB2E029F9D97100B5AB40 /* PaymentButton.swift in Sources */,
-				95E1AC4229DFD70E000D7077 /* ContentView.swift in Sources */,
+				95E1AC4229DFD70E000D7077 /* LaRedondaMain.swift in Sources */,
 				95C31C8929E4ADC400CAC5B2 /* CartManager.swift in Sources */,
 				9596A5AE29E59AA3009C0CF1 /* WineRow.swift in Sources */,
 				95E1AC4029DFD70E000D7077 /* LaRedondaApp.swift in Sources */,
@@ -219,6 +222,7 @@
 				95A0B22F29E21E2800352A0C /* WineCard.swift in Sources */,
 				956F8DBD29E8BF570013B5DC /* SplashView.swift in Sources */,
 				95DFDD6F29E0C45A00F18D39 /* Product.swift in Sources */,
+				9540B2292A00859200E5A8D2 /* Onboarding.swift in Sources */,
 				95C31C8329E477D100CAC5B2 /* CartButton.swift in Sources */,
 				95AA5FFD29FDE0E90008486A /* PageView.swift in Sources */,
 			);

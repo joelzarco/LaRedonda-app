@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  LaRedondaMain.swift
 //  LaRedonda
 //
 //  Created by sergio joel camacho zarco on 06/04/23.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct LaRedondaMain: View {
     @StateObject var cartManager = CartManager()
     var columns = [GridItem(.adaptive(minimum: 160), spacing: 20)]
     
