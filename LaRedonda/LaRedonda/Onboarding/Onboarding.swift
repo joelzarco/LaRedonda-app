@@ -14,7 +14,7 @@ struct Onboarding: View {
     @State private var pageIndex = 0
     private let pages : [Page] = Page.onboardPages
     
-    @EnvironmentObject var signInManager : SignInManager // for future signInwithApple
+    @EnvironmentObject var signInManager : SignInManager
     private var hasSignIn : Bool{
         return !signInManager.userId.isEmpty
     }
@@ -27,11 +27,11 @@ struct Onboarding: View {
                         if(page == pages.last){
                             if(!hasSignIn){
                                 VStack{
-//                                    SignInButtonView()
-//                                        .environmentObject(signInManager)
-//                                        .environmentObject(appState)
-//                                        .padding(.leading, 40)
-//                                        .padding(.trailing, 40)
+                                    SignInButtonView()
+                                        .environmentObject(signInManager)
+                                        .environmentObject(appState)
+                                        .padding(.leading, 40)
+                                        .padding(.trailing, 40)
                                     
                                     Button("Continue as guest"){
                                         appState.continueAsGuest = true

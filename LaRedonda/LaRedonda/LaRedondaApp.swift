@@ -19,12 +19,6 @@ class AppState : ObservableObject{
 //    }
 }
 
-class SignInManager : ObservableObject{
-    
-    @AppStorage("userId") var userId : String = ""
-    @AppStorage("name") var name : String = ""
-}
-
 @main
 struct LaRedondaApp: App {
     
@@ -68,5 +62,5 @@ struct LaRedondaApp: App {
                 } // .onAppear()
             } // outter else
         } // Wg
-    }
+    } // some scn
 }
